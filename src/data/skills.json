@@ -1,0 +1,35 @@
+{
+  "id": "05",
+  "title": "SOFT SKILLS",
+  "description": "Competências que Transformam Profissionais em Líderes Extraordinários.",
+
+  "heading": "Habilidades",
+  "paragraph": "No ambiente corporativo atual, as soft skills (habilidades comportamentais) são o diferencial que separa profissionais medianos de líderes excepcionais. Independentemente da área de atuação, estas competências determinam o sucesso profissional e a capacidade de influenciar positivamente organizações inteiras. Levamos estas competências a sério em todos os nossos projetos, desenvolvendo metodologias comprovadas para potencializar:",
+
+  "progress": [
+    {
+      "title": "COMUNICAÇÃO EFICAZ",
+      "percentage": 88
+    },
+    {
+      "title": "LIDERANÇA",
+      "percentage": 73
+    },
+    {
+      "title": "PENSAMENTO CRÍTICO",
+      "percentage": 90
+    },
+    {
+      "title": "GESTÃO DE TEMPO",
+      "percentage": 95
+    },
+    {
+      "title": "GESTÃO EMOCIONAL",
+      "percentage": 78
+    },
+    {
+      "title": "NEGOCIAÇÃO",
+      "percentage": 87
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "navLinks": [
+    {
+      "to": "home",
+      "text": "Início"
+    },
+    {
+      "to": "services",
+      "text": "Serviços"
+    },
+
+    {
+      "to": "portfolio",
+      "text": "Portfólio"
+    },
+    {
+      "to": "clients",
+      "text": "Clientes"
+    },
+    {
+      "to": "news",
+      "text": "Artigos"
+    },
+    {
+      "to": "skills",
+      "text": "Competências"
+    },
+    {
+      "to": "team",
+      "text": "Equipe"
+    },
+    {
+      "to": "milestones",
+      "text": "Entregas"
+    },
+    {
+      "to": "about",
+      "text": "Sobre"
+    },
+    {
+      "to": "pricing",
+      "text": "Orçamentos"
+    },
+    {
+      "to": "contact",
+      "text": "Contato"
+    }
+  ],
+
+  "internalLinks": [
+    {
+      "to": "blog",
+      "text": "Blog"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "reviews": [
+    {
+      "review": "A equipe Allcance trouxe um conhecimento transformador para toda a minha equipe, desde os supervisores até os diretores, sem dúvida, a minha vida e a de toda a equipe foram positivamente impactadas. A gratidão por esse trabalho excepcional será eterna!.",
+      "name": "Caio Moreno",
+      "position": "Sócio - Diretor da Ok Alimentos"
+    },
+    {
+      "review": "A parceria com a Alcance tem sido essencial para a gestão das nossas clínicas. Com suas soluções, conseguimos otimizar processos administrativos, trazendo mais organização, eficiência e qualidade tanto no atendimento às famílias quanto no suporte à nossa equipe. Com mais controle e praticidade na rotina, conseguimos focar no que realmente importa: oferecer um cuidado humanizado e de excelência. Estamos muito satisfeitos com o suporte e a dedicação da equipe Alcance!",
+      "name": "Simone Souza",
+      "position": "CEO - Espaço Tempo de Cuidar"
+    }
+  ]
+}

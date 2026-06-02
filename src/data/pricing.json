@@ -1,0 +1,102 @@
+{
+  "id": "09",
+  "title": "SERVIÇOS",
+  "description": "Solicite orçamento",
+
+  "plans": [
+    {
+      "title": "Adequação",
+      "price": "NR1",
+      "desc": "Criação PGR",
+      "features": [
+        {
+          "exist": true,
+          "text": "Pesquisas e análise"
+        },
+        {
+          "exist": true,
+          "text": "Riscos psicossociais"
+        },
+        {
+          "exist": true,
+          "text": "Plano de ação"
+        },
+        {
+          "exist": true,
+          "text": "Relatórios"
+        },
+        {
+          "exist": true,
+          "text": "Integração com PDI"
+        }
+      ],
+      "selectButton": {
+        "text": "CONTRATE",
+        "to": "https://wa.me/5571992905843"
+      }
+    },
+    {
+      "title": "Criação setor",
+      "price": "DHO",
+      "desc": "Implantação",
+      "features": [
+        {
+          "exist": true,
+          "text": "Psicólogos"
+        },
+        {
+          "exist": true,
+          "text": "Organização de Eventos"
+        },
+        {
+          "exist": true,
+          "text": "Ações integrativas"
+        },
+        {
+          "exist": true,
+          "text": "Palestras temáticas"
+        },
+        {
+          "exist": true,
+          "text": "Assessoria ao RH"
+        }
+      ],
+      "selectButton": {
+        "text": "CONTRATE",
+        "to": "https://wa.me/5571992905843"
+      }
+    },
+
+    {
+      "title": "Aplicação",
+      "price": "PDI",
+      "desc": "Plano Desenvolvimento",
+      "features": [
+        {
+          "exist": true,
+          "text": "Projeto de 6 meses"
+        },
+        {
+          "exist": true,
+          "text": "Habilidades"
+        },
+        {
+          "exist": true,
+          "text": "1 Plano Pessoal"
+        },
+        {
+          "exist": true,
+          "text": "1 Plano Profissional"
+        },
+        {
+          "exist": true,
+          "text": "Integração com DISC"
+        }
+      ],
+      "selectButton": {
+        "text": "CONTRATE",
+        "to": "https://wa.me/5571992905843"
+      }
+    }
+  ]
+}

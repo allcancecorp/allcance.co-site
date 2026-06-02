@@ -1,0 +1,62 @@
+{
+  "id": "01",
+  "title": "SERVIÇOS",
+  "description": "Soluções Que Transformam Desafios em Oportunidades de Crescimento.",
+
+  "servicesBoxes": [
+    {
+      "order": "I",
+      "servTitle": "Programa NR-1 & PGR",
+      "desc": "Transforme Exigências Legais em Vantagem Competitiva. A adequação à NR-1 vai muito além da conformidade legal. Nossa metodologia exclusiva transforma uma obrigação em oportunidade estratégica, criando um ambiente psicologicamente seguro que reduz afastamentos em até 60% e aumenta a produtividade em até 30%. Nosso programa identifica fatores de risco como estresse, sobrecarga e assédio, implementando ações preventivas que melhoram o bem-estar, a produtividade e reduzem afastamentos. O resultado? Um ambiente organizacional mais equilibrado, seguro e produtivo.",
+      "bottomSpace": true
+    },
+    {
+      "order": "II",
+      "servTitle": "PESQUISAS & PERFIS (DISC)",
+      "desc": "Desbloqueie o Potencial Oculto da Sua Equipe. Nossa metodologia DISC vai além do diagnóstico padrão. Medimos com precisão a percepção coletiva sobre o ambiente de trabalho, identificando fatores-chave como comunicação, liderança e estrutura organizacional que impactam diretamente o desempenho. Com insights acionáveis, você poderá formar times complementares, melhorar a comunicação e aumentar a eficiência em resolução de problemas em até 40%. Nossas pesquisas e treinamentos são cientificamente validados para construir ou melhorar seu clima organizacional.",
+      "bottomSpace": true
+    },
+    {
+      "order": "III",
+      "servTitle": "Implementação de DHO",
+      "desc": "Seu Departamento de Pessoas como Centro de Resultados. O DHO estratégico vai além da gestão tradicional de RH. Focamos no desenvolvimento contínuo, engajamento e alinhamento estratégico dos colaboradores através de práticas como treinamentos direcionados, planos de carreira e programas de liderança. Transformamos seu capital humano em vantagem competitiva, com sistemas que identificam, desenvolvem e retêm talentos-chave, gerando ROI mensurável e preparando sua equipe para os desafios do negócio.",
+      "bottomSpace": true
+    },
+    {
+      "order": "IV",
+      "servTitle": "RECRUTAMENTO & SELEÇÃO",
+      "desc": "Contratações que Transformam Cultura e Resultados. Uma contratação eficiente não é apenas sobre preencher vagas, mas sobre atrair talentos alinhados à sua cultura. Nosso processo científico de seleção reduz em 70% as contratações equivocadas, economizando custos significativos. Ao integrar novos colaboradores alinhados aos valores da empresa, aumentamos a satisfação, reduzimos custos trabalhistas e garantimos a continuidade do desenvolvimento, criando um ciclo virtuoso de crescimento organizacional.",
+      "bottomSpace": true
+    },
+    {
+      "order": "V",
+      "servTitle": "CULTURA & CLIMA",
+      "desc": "Cultura Organizacional como Sua Vantagem Competitiva Inimitável. O clima e a cultura são fatores determinantes para o sucesso empresarial. Enquanto a cultura reflete valores e normas, o clima representa a percepção dos colaboradores sobre o ambiente de trabalho. Desenvolvemos culturas fortes e alinhadas com propósitos claros que favorecem um clima positivo, impactando motivação, produtividade e retenção de talentos. Empresas que investem nesse equilíbrio criam espaços mais engajadores, inovadores e lucrativos.",
+      "bottomSpace": true
+    },
+        {
+      "order": "VI",
+      "servTitle": "AGENTES DE I.A.",
+      "desc": "Os agentes de Inteligência Artificial (IA) otimizam processos empresariais com soluções adaptáveis e eficientes. Atuam desde o atendimento personalizado ao cliente até a recuperação estratégica de consumidores estagnados, utilizando análise preditiva e interações customizadas. Esses agentes elevam a experiência do usuário, reduzem custos operacionais e garantem resultados concretos e mensuráveis.",
+      "bottomSpace": true
+    },
+        {
+      "order": "VII",
+      "servTitle": "CULTURA E INTELIGÊNCIA ARTIFICIAL",
+      "desc": "Nossa consultoria em gestão de IA integra tecnologias inteligentes à cultura organizacional, potencializando a eficiência e o engajamento interno. Com estratégias alinhadas aos valores corporativos, promovemos uma transição fluida para ambientes digitais inovadores. Esse alinhamento estratégico gera vantagem competitiva, otimiza processos internos, melhora decisões gerenciais e fortalece equipes preparadas para os desafios futuros, destacando sua empresa pela inovação sustentável e eficaz.",
+      "bottomSpace": true
+    },
+        {
+      "order": "VIII",
+      "servTitle": "CONSULTORIA EM SAÚDE MENTAL CORPORATIVA",
+      "desc": "Nossa consultoria em saúde mental corporativa promove ambientes organizacionais mais saudáveis, produtivos e sustentáveis. Atuamos na identificação e prevenção de desgastes emocionais, oferecendo ferramentas práticas e intervenções estratégicas. Com isso, empresas obtêm equipes mais motivadas, redução do absenteísmo, melhora no clima interno e aumento do engajamento profissional, resultando em crescimento organizacional sólido e constante.",
+      "bottomSpace": true
+    },
+    {
+      "order": "IX",
+      "servTitle": "PALESTRAS & TREINAMENTOS",
+      "desc": "Experiências de Aprendizagem que Geram Mudanças Reais. Em uma era de abundância de informações e falta de foco, oferecemos treinamentos direcionados e quantificáveis que vão além da inspiração momentânea, criando transformações comportamentais mensuráveis. Nossa metodologia exclusiva de aprendizagem experiencial e acompanhamento de resultados garante que o conhecimento se transforme em novas habilidades e comportamentos que impactam diretamente os resultados do seu negócio.",
+      "bottomSpace": true
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "id": "06",
+  "title": "EQUIPE",
+  "description": "Conheça nosso time",
+
+  "members": [
+    {
+      "className": "direction-left",
+      "name": "Sandro Cabral",
+      "position": "PSICÓLOGO CRP-03/25157",
+      "desc": "Psicólogo, escritor e empreendedor, com atuação voltada para consultoria organizacional, treinamentos corporativos e mentorias estratégicas. Especialista em desenvolvimento humano e liderança, apoia empresas na criação de culturas sólidas, equipes de alta performance e ambientes de trabalho mais produtivos. Sócio da Allcance Educação e do Instituto Autogenesis, tem paixão por aprendizado e dedica-se a gerar impacto positivo nos negócios por meio da psicologia aplicada, gestão e inovação.",
+      "Linkedin": "https://www.linkedin.com/in/sandro-cabral-674ab113/",
+      "Instagram": "https://www.instagram.com/sandroqcabral.psi/"
+    },
+    {
+      "className": "direction-right top-100",
+      "name": "Yeda Sé",
+      "position": "PSICÓLOGA CRP-03/24289 | Associada",
+      "desc": "Psicóloga com MBA em Gestão Estratégica de Pessoas e especializações em Psicologia do Trânsito e Terapia Sistêmica. Possui sólida experiência em recrutamento e seleção, desenvolvimento humano organizacional e avaliação psicológica. Atua com escuta ativa e empatia, aliadas a planejamento estratégico e visão de negócios, para promover ambientes organizacionais mais saudáveis, produtivos e alinhados aos objetivos corporativos.",
+      "Linkedin": "https://www.linkedin.com/in/yeda-sento-s%C3%A9-8b967b157/",
+      "Instagram": "https://www.instagram.com/psiyedasentose/"
+    },
+    {
+      "className": "direction-left top-100",
+      "name": "Weber Jatahy",
+      "position": "ANALISTA | PESSOAS | PROCESSOS ",
+      "desc": "Estrategista em branding, comportamento e desenvolvimento empresarial, com forte atuação na implementação de metodologias DISC para líderes e gestores. Une inovação em inteligência artificial, indicadores de performance (KPIs) e processos estratégicos para impulsionar negócios éticos, sustentáveis e de alto desempenho. Entusiasta por transformação organizacional, atua para alinhar cultura, liderança e resultados de forma consistente e mensurável.",
+      "Linkedin": "https://www.linkedin.com/in/weberjatahy/",
+      "Instagram": "https://instagram.com/weberjatahy"
+    },
+    {
+      "className": "direction-right top-100",
+      "name": "Eric Falcão",
+      "position": "TEC SEG TRABALHO 0014649/BA | Associado",
+      "desc": "Técnico de Segurança do Trabalho e bombeiro civil com experiência em elaboração de PGR / PCMAT / PCMSO / PPP, implantação de CIPA, SIPAT e mapas de risco. Elabora procedimentos, normas e manuais de segurança do trabalho. Formação extra em monitoramento ambiental, elaboração e formação de brigadas de emergência.",
+      "Linkedin": "",
+      "Instagram": ""
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "id": "08",
+  "title": "SOBRE",
+  "description": "Quem somos",
+
+  "mediumText": "Allcance Educação. \nSua cultura é a nossa missão.",
+  "smallText": "Nossa Missão é Potencializar o Que Há de Melhor nas Pessoas e Organizações.",
+  "paragraphs": [
+    "A Allcance nasceu da convicção de que organizações extraordinárias são construídas por pessoas extraordinárias. Acreditamos que a comunicação é a melhor ferramenta para os negócios, mas apenas quando integrada a uma estratégia completa de desenvolvimento humano e organizacional.",
+    "Há mais de 2 anos, ajudamos empresas a construir culturas organizacionais que não apenas retêm talentos, mas os transformam em verdadeiros embaixadores da marca. Nosso método exclusivo combina ciência comportamental, análise de dados e experiência prática para resultados mensuráveis.",
+    "O que nos diferencia é nossa abordagem sistêmica que aborda simultaneamente os três pilares da excelência organizacional: liderança inspiradora, processos eficientes e propósito compartilhado.",
+    "Nosso compromisso é auxiliar o seu empreendimento a crescer de forma autêntica e com processos bem definidos, transformando desafios em oportunidades e potencializando o que há de melhor em cada pessoa e organização."
+  ],
+
+  "internalLink": {
+    "to": "contact",
+    "text": "CONTATO"
+  },
+  "events": [ 
+    {
+      "content": "Abrimos o Instituto Autogenesis, com foco em desenvolvimento humano pelo autoconhecimento aplicado.",
+      "date": "2014"
+    },
+    {
+      "content": "Realizamos treinamentos e formações com a presença dos mais renomados nomes da psicologia e prática clínica do mercado",
+      "date": "2016"
+    },
+    {
+      "content": "Nos consolidamos dentre os melhores profissionais para o atendimento clínico e orientação profissional",
+      "date": "2020"
+    },
+    {
+      "content": "Iniciamos o projeto Allcance com objetivo de ajudar negócios a fortalecerem suas culturas organizacionais.",
+      "date": "2022"
+    }
+  ]
+}

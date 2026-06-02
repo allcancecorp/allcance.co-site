@@ -1,0 +1,34 @@
+{
+  "id": "04",
+  "title": "ARTIGOS",
+  "description": "ATUALIZAÇÕES",
+  "articles": [
+    {
+      "to": "/Nr1",
+      "tags": ["NR1", "PGR"],
+      "info": {
+        "title": "Como preparar a sua empresa para a NR1.",
+        "date": "10 Setembro, 2024",
+        "author": "Sandro Cabral"
+      }
+    },
+    {
+      "to": "/Disc",
+      "tags": ["Disc", "Comportamento"],
+      "info": {
+        "title": "Saiba qual é o seu perfil comportamental.",
+        "date": "21 Junho, 2024",
+        "author": "Weber Jatahy"
+      }
+    },
+    {
+      "to": "/Cultura",
+      "tags": ["Cultura Organizacional"],
+      "info": {
+        "title": "Como a cultura de sua empresa afeta os negócios.",
+        "date": "10 Agosto, 2024",
+        "author": "Time Allcance"
+      }
+    }
+  ]
+}

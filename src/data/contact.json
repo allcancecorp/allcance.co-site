@@ -1,0 +1,41 @@
+{
+  "id": "10",
+  "title": "CONTATO",
+  "description": "FALE CONOSCO",
+
+  "paragrapgs": [
+    "Estamos prontos para entender os desafios específicos da sua empresa e desenvolver soluções personalizadas que transformem sua cultura organizacional em vantagem competitiva.",
+    "Nossa equipe de especialistas está disponível para uma conversa inicial sem compromisso, onde poderemos discutir:",
+    "Seus principais desafios organizacionais atuais; Oportunidades de melhoria em cultura e clima; Possíveis soluções personalizadas para sua realidade; Próximos passos para uma parceria de sucesso."
+  ],
+
+  "contactInfo": [
+    {
+      "title": "SITE",
+      "link": {
+        "to": "https://allcance.co",
+        "text": "www.allcance.co"
+      }
+    },
+    {
+      "title": "ENDEREÇO",
+      "link": {
+        "to": "https://maps.app.goo.gl/aWWZbQUFGbPT1J4J6",
+        "text": "Edf. CEO Salvador Shopping, Sl 1416. Torre Londres."
+      }
+    },
+    {
+      "title": "WHATSAPP",
+      "link": {
+        "to": "https://wa.me/5571992905843",
+        "text": "+55 71 99290-5843"
+      }
+    },
+    {
+      "title": "FUNCIONAMENTO",
+      "value": "8:00 às 18:00"
+    }
+  ],
+
+  "formspreeEndpoint": "https://formspree.io/f/xnnpnopz"
+}

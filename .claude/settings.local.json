@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python3 -c ' *)",
+      "Bash(python -c ' *)",
+      "Bash(identify \"C:/code/202508 Site Allcance/src/assets/images/home/main_home.webp\")",
+      "Bash(node *)",
+      "Bash(npm run *)"
+    ]
+  }
+}

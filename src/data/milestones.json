@@ -1,0 +1,20 @@
+{
+  "id": "07",
+  "title": "ENTREGAS",
+  "description": "ALGUNS NÚMEROS",
+
+  "stones": [
+    {
+      "number": "+200 perfis",
+      "text": "Análise DISC e devolutivas realizadas em empresas e profissionais."
+    },
+    {
+      "number": "+6000 mentorias",
+      "text": "Mentorias e atendimentos particulares."
+    },
+    {
+      "number": "+50 pesquisas",
+      "text": "Climas organizacionais e culturas."
+    }
+  ]
+}

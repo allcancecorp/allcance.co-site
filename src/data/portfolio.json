@@ -1,0 +1,42 @@
+{
+  "id": "02",
+  "title": "PORTFOLIO",
+  "description": "ALGUNS TRABALHOS",
+  "pargraph1": "Allcance Educação \nSua cultura é a nossa missão.",
+  "pargraph2": "Projetos de educação corporativa, palestras e treinamentos.",
+  "pargraph3": "O nosso compromisso é auxiliar o seu empreendimento a crescer de forma autêntica e com processos bem definidos.",
+  "portfolioItems": [
+    {
+      "order": 0,
+      "className": "p_one_half",
+      "info": {
+        "desc": "PALESTRAS",
+        "title": "Organizacionais"
+      }
+    },
+    {
+      "order": 1,
+      "className": "p_one_half",
+      "info": {
+        "desc": "ANÁLISE",
+        "title": "Comportamental"
+      }
+    },
+    {
+      "order": 2,
+      "className": "p_one_fourth",
+      "info": {
+        "desc": "DHO",
+        "title": "Setor"
+      }
+    },
+    {
+      "order": 3,
+      "className": "p_one_fourth",
+      "info": {
+        "desc": "UNIVERSIDADE",
+        "title": "Corporativa"
+      }
+    }
+  ]
+}
