@@ -828,13 +828,6 @@ body .sm-clean li.current_page_item > a {
   position: relative;
 }
 
-.home-button {
-  position: absolute;
-  top: -35px;
-  left: 70%;
-  z-index: 98;
-}
-
 img.dots {
   position: absolute;
   top: -240px;

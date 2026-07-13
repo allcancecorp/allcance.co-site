@@ -320,8 +320,7 @@
     line-height: 115%;
   }
 
-  img.dots,
-  .home-button {
+  img.dots {
     display: none !important;
   }
 

@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect, useRef, useCallback } from "react";
 
 // Images
 import dots from "../../assets/images/dots.png";
@@ -28,39 +28,41 @@ const WA_HREF =
 function Home() {
   const [phraseIndex, setPhraseIndex] = useState(0);
   const [visible, setVisible] = useState(true);
-  const timerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
+  const outerTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
+  const innerTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
   const hoveredRef = useRef(false);
 
   const prefersReducedMotion =
     typeof window !== "undefined" &&
     window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
-  const scheduleNext = () => {
+  const scheduleNext = useCallback(() => {
     if (prefersReducedMotion) return;
-    timerRef.current = setTimeout(() => {
+    outerTimerRef.current = setTimeout(() => {
       if (hoveredRef.current) return;
       // fade out
       setVisible(false);
-      setTimeout(() => {
+      innerTimerRef.current = setTimeout(() => {
         setPhraseIndex((i) => (i + 1) % H1_PHRASES.length);
         setVisible(true);
         scheduleNext();
       }, FADE_MS);
     }, INTERVAL_MS);
-  };
+  }, []);
 
   useEffect(() => {
     if (prefersReducedMotion) return;
     scheduleNext();
     return () => {
-      if (timerRef.current) clearTimeout(timerRef.current);
+      if (outerTimerRef.current) clearTimeout(outerTimerRef.current);
+      if (innerTimerRef.current) clearTimeout(innerTimerRef.current);
     };
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
+  }, [scheduleNext]);
 
   const handleMouseEnter = () => {
     hoveredRef.current = true;
-    if (timerRef.current) clearTimeout(timerRef.current);
+    if (outerTimerRef.current) clearTimeout(outerTimerRef.current);
+    if (innerTimerRef.current) clearTimeout(innerTimerRef.current);
   };
 
   const handleMouseLeave = () => {
