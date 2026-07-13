@@ -851,6 +851,64 @@ img.logo-icon {
   transform: translateY(-50%);
 }
 
+/* Hero H1 rotativo */
+.hero-h1-wrapper {
+  /* Reserve height for the longest phrase to prevent layout shift */
+  min-height: 4.5em;
+  display: flex;
+  align-items: flex-start;
+}
+
+.hero-h1 {
+  transition: opacity 0.3s ease;
+  margin-bottom: 0;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-h1 {
+    transition: none;
+  }
+}
+
+/* Hero subheadline */
+.hero-subheadline {
+  margin-top: 1.25rem;
+}
+
+/* Hero CTA */
+.hero-cta-wrapper {
+  margin-top: 2rem;
+}
+
+.hero-cta-button {
+  display: inline-block;
+  font-size: 16px;
+  padding: 14px 32px;
+}
+
+.hero-microcopy {
+  margin-top: 0.75rem;
+  font-size: 14px;
+  color: #214b51;
+  opacity: 0.8;
+  margin-bottom: 0;
+}
+
+/* Barra de confiança */
+.hero-trust-bar {
+  background-color: #031e23;
+  padding: 14px 30px;
+  text-align: center;
+}
+
+.hero-trust-bar p {
+  margin: 0;
+  color: #fff;
+  font-size: 15px;
+  line-height: 1.5;
+  opacity: 0.85;
+}
+
 /* ===================================
     4. Services Section CSS
 ====================================== */
