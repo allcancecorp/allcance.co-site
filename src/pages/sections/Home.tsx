@@ -3,21 +3,27 @@ import { useState, useEffect, useRef, useCallback } from "react";
 // Images
 import dots from "../../assets/images/dots.png";
 import iconLogo from "../../assets/images/icon_logo.png";
-// import mainImage01 from "../../assets/images/home/main_img_01.png";
-// TODO: trocar por imagem corporativa (reunião/escritório, tom escuro) — microfone atual pode ir para seção de palestras
-import mainImage01 from "../../assets/images/home/main_home.webp";
+import heroImg1 from "../../assets/images/home/hero-01.jpg";
+import heroImg2 from "../../assets/images/home/hero-02.jpg";
+import heroImg3 from "../../assets/images/home/hero-03.jpg";
+import heroImg4 from "../../assets/images/home/hero-04.jpg";
+import heroImg5 from "../../assets/images/home/hero-05.jpg";
+
+const HERO_IMAGES = [heroImg1, heroImg2, heroImg3, heroImg4, heroImg5];
 
 const H1_PHRASES = [
   "Saúde mental que vira retorno auditável, não passivo.",
-  "Transforme o cuidado com o seu time em resultado mensurável. A NR-1 em dia vem como consequência.",
+  "Transforme o cuidado com o seu time em resultado mensurável. NR-1 em dias.",
   "Menos afastamento, mais produtividade, documentação que resiste a auditoria.",
 ];
 
-const INTERVAL_MS = 7000;
+const SLIDE_INTERVAL_MS = 5000;
+const SLIDE_DURATION_MS = 600;
+const H1_INTERVAL_MS = 7000;
 const FADE_MS = 300;
 
 const SUBHEADLINE =
-  "A Allcance é a consultoria que estrutura a saúde mental da sua empresa de ponta a ponta: diagnóstico de riscos psicossociais, plano de ação, acompanhamento clínico conduzido por psicólogos e documentação auditável, tudo sustentado pelo ecossistema Allcare.";
+  "Somos uma consultoria para estruturar a saúde mental da sua empresa de ponta a ponta: diagnóstico dos riscos psicossociais, planos de ação, acompanhamento clínico por psicólogos e toda documentação auditável.";
 
 const TRUST_BAR =
   "Consultoria em saúde mental corporativa. Diagnóstico, plano de ação, acompanhamento clínico e documentação auditável, num só fluxo.";
@@ -26,28 +32,36 @@ const WA_HREF =
   "https://wa.me/5571992905843?text=Quero%20diagnosticar%20minha%20empresa";
 
 function Home() {
+  // H1 rotation state
   const [phraseIndex, setPhraseIndex] = useState(0);
-  const [visible, setVisible] = useState(true);
+  const [h1Visible, setH1Visible] = useState(true);
   const outerTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
   const innerTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
   const hoveredRef = useRef(false);
+
+  // Carousel state
+  const [slideIndex, setSlideIndex] = useState(0);
+  const [nextIndex, setNextIndex] = useState<number | null>(null);
+  const [sliding, setSliding] = useState(false);
+  const slideTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
+  const slideTransitionRef = useRef<ReturnType<typeof setTimeout> | null>(null);
 
   const prefersReducedMotion =
     typeof window !== "undefined" &&
     window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
+  // H1 rotation
   const scheduleNext = useCallback(() => {
     if (prefersReducedMotion) return;
     outerTimerRef.current = setTimeout(() => {
       if (hoveredRef.current) return;
-      // fade out
-      setVisible(false);
+      setH1Visible(false);
       innerTimerRef.current = setTimeout(() => {
         setPhraseIndex((i) => (i + 1) % H1_PHRASES.length);
-        setVisible(true);
+        setH1Visible(true);
         scheduleNext();
       }, FADE_MS);
-    }, INTERVAL_MS);
+    }, H1_INTERVAL_MS);
   }, []);
 
   useEffect(() => {
@@ -58,6 +72,29 @@ function Home() {
       if (innerTimerRef.current) clearTimeout(innerTimerRef.current);
     };
   }, [scheduleNext]);
+
+  // Image carousel
+  const advanceSlide = useCallback(() => {
+    if (prefersReducedMotion) return;
+    slideTimerRef.current = setTimeout(() => {
+      const next = (slideIndex + 1) % HERO_IMAGES.length;
+      setNextIndex(next);
+      setSliding(true);
+      slideTransitionRef.current = setTimeout(() => {
+        setSlideIndex(next);
+        setNextIndex(null);
+        setSliding(false);
+      }, SLIDE_DURATION_MS);
+    }, SLIDE_INTERVAL_MS);
+  }, [slideIndex]);
+
+  useEffect(() => {
+    advanceSlide();
+    return () => {
+      if (slideTimerRef.current) clearTimeout(slideTimerRef.current);
+      if (slideTransitionRef.current) clearTimeout(slideTransitionRef.current);
+    };
+  }, [advanceSlide]);
 
   const handleMouseEnter = () => {
     hoveredRef.current = true;
@@ -73,7 +110,7 @@ function Home() {
   return (
     <section id="home" className="section no-page-title">
       <div className="section-wrapper block content-1170 center-relative">
-        <div className="content-wrapper">
+        <div className="content-wrapper hero-text-wrapper">
           {/* H1 rotativo */}
           <div
             className="hero-h1-wrapper"
@@ -83,7 +120,7 @@ function Home() {
           >
             <h1
               className="entry-title big-title hero-h1"
-              style={{ opacity: visible ? 1 : 0 }}
+              style={{ opacity: h1Visible ? 1 : 0 }}
             >
               {H1_PHRASES[phraseIndex]}
             </h1>
@@ -91,36 +128,43 @@ function Home() {
 
           {/* Subheadline fixa */}
           <p className="site-description hero-subheadline">{SUBHEADLINE}</p>
-
-          {/* CTA */}
-          <div className="hero-cta-wrapper">
-            <a
-              href={WA_HREF}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="button hero-cta-button"
-            >
-              Quero diagnosticar minha empresa
-            </a>
-            <p className="hero-microcopy">
-              Conversa inicial sem compromisso. Resposta em até 1 dia útil.
-            </p>
-          </div>
         </div>
       </div>
 
-      {/* Imagem de fundo */}
-      <div
-        className="home-full-width"
-        style={{
-          backgroundImage: `url(${mainImage01})`,
-          backgroundRepeat: "no-repeat",
-          backgroundSize: "cover",
-          backgroundPosition: "center center",
-          height: "100vh",
-        }}
-      >
-        <img className="dots" src={dots} alt="Dots" />
+      {/* Carrossel de imagens */}
+      <div className="home-full-width hero-carousel">
+        {/* Clip isolado apenas para os slides — não corta botão nem bolinhas */}
+        <div className="hero-slides-clip" aria-hidden="true">
+          <div
+            className="hero-slide hero-slide--current"
+            style={{
+              backgroundImage: `url(${HERO_IMAGES[slideIndex]})`,
+              transform: sliding ? "translateX(-100%)" : "translateX(0)",
+              transition: sliding ? `transform ${SLIDE_DURATION_MS}ms ease-in-out` : "none",
+            }}
+          />
+          {nextIndex !== null && (
+            <div
+              className="hero-slide hero-slide--next"
+              style={{
+                backgroundImage: `url(${HERO_IMAGES[nextIndex]})`,
+                transform: sliding ? "translateX(0)" : "translateX(100%)",
+                transition: sliding ? `transform ${SLIDE_DURATION_MS}ms ease-in-out` : "none",
+              }}
+            />
+          )}
+        </div>
+
+        {/* Estes ficam fora do clip para não serem cortados */}
+        <img className="dots" src={dots} alt="" />
+        <a
+          href={WA_HREF}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="button home-button"
+        >
+          Contratar agora
+        </a>
         <div className="home-full-width-background">
           <img className="logo-icon" src={iconLogo} alt="Allcance Ícone" />
         </div>

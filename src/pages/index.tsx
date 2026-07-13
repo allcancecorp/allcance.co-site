@@ -2,6 +2,10 @@ import { useEffect, useState } from 'react';
 
 // Sections
 import HomeSection from './sections/Home';
+import TransformBlock from './sections/TransformBlock';
+import InterestNumbers from './sections/InterestNumbers';
+import { DesireSolution, DesireAllcare, DesireNr1 } from './sections/DesireSystem';
+import { DesireDiferenciais, DesireTabs } from './sections/DesireDiffs';
 import Services from './sections/Services';
 import Contact from './sections/Contact';
 import Portfolio from './sections/portfolio';
@@ -40,6 +44,13 @@ function Landing() {
       {loading ? <Loader fadeOffLoader={fadeOffLoader} /> : <></>}
       <div id="content" className="site-content center-relative">
         <HomeSection />
+        <TransformBlock />
+        <InterestNumbers />
+        <DesireSolution />
+        <DesireAllcare />
+        <DesireNr1 />
+        <DesireDiferenciais />
+        <DesireTabs />
         <Services />
         <Portfolio />
         <Clients />
