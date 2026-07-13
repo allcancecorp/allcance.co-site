@@ -1,12 +1,8 @@
 // Pages and Components
 import Landing from '../pages/';
 import Navbar from '../components/Navbar';
-import Single from '../pages/blog/Single';
 import Footer from '../pages/Footer';
-import Blog from '../pages/blog/Blog';
-import Nr1 from '../pages/blog/Nr1';
-import Disc from '../pages/blog/Disc';
-import Cultura from '../pages/blog/Cultura';
+import { Navigate } from 'react-router-dom';
 
 // ------------------
 
@@ -15,7 +11,7 @@ import Cultura from '../pages/blog/Cultura';
  * if the component to be rendered is the landing page or not.
  *
  * In landing page case: nav links works as scrollable links
- * other case(such as : blog): nav links works as router links
+ * other case: nav links works as router links
  *
  * @param component the component to be rendered
  * @param isLanding check for a component if its the landingpage
@@ -48,23 +44,23 @@ const routes: RoutesType[] = [
   },
   {
     path: '/single',
-    element: renderWithNav(<Single />, false),
+    element: <Navigate replace to="/" />,
   },
   {
     path: '/blog',
-    element: renderWithNav(<Blog />, false),
+    element: <Navigate replace to="/" />,
   },
   {
     path: '/Nr1',
-    element: renderWithNav(<Nr1 />, false),
+    element: <Navigate replace to="/" />,
   },
   {
     path: '/Disc',
-    element: renderWithNav(<Disc />, false),
+    element: <Navigate replace to="/" />,
   },
   {
     path: '/Cultura',
-    element: renderWithNav(<Cultura />, false),
+    element: <Navigate replace to="/" />,
   }
 ];
 

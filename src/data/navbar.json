@@ -18,10 +18,6 @@
       "text": "Clientes"
     },
     {
-      "to": "news",
-      "text": "Artigos"
-    },
-    {
       "to": "skills",
       "text": "Competências"
     },
@@ -44,13 +40,6 @@
     {
       "to": "contact",
       "text": "Contato"
-    }
-  ],
-
-  "internalLinks": [
-    {
-      "to": "blog",
-      "text": "Blog"
     }
   ]
 }

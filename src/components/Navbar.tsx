@@ -25,14 +25,6 @@ function Navbar({ isLanding }: NavbarProps) {
   };
 
   /**
-   * Hiding navigation on clicking a nav link (important in mobie view)
-   */
-  const handleInternalLinkClick = () => {
-    setNavActive(false);
-    window.scroll(0, 0);
-  };
-
-  /**
    * Toggle menu on clicking on menu btn
    */
   const handleMenuBtnClick = () => {
@@ -81,13 +73,6 @@ function Navbar({ isLanding }: NavbarProps) {
                       {link.text}
                     </RouterLink>
                   )}
-                </li>
-              ))}
-              {navData.internalLinks.map((link, i) => (
-                <li key={"internalLink-" + i}>
-                  <RouterLink to="/blog" onClick={handleInternalLinkClick}>
-                    {link.text}
-                  </RouterLink>
                 </li>
               ))}
             </ul>
