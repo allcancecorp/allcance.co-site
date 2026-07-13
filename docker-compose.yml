@@ -1,0 +1,34 @@
+services:
+  allcance-site:
+    build: .
+    image: allcance-site:latest
+    container_name: allcance-site
+    restart: always
+    volumes:
+      - /var/www/allcance-site/allcare:/usr/share/nginx/html/allcare:ro
+      - /var/www/allcance-site/alltomate:/usr/share/nginx/html/alltomate:ro
+      - /var/www/allcance-site/cookies:/usr/share/nginx/html/cookies:ro
+      - /var/www/allcance-site/inst:/usr/share/nginx/html/inst:ro
+      - /var/www/allcance-site/landpage:/usr/share/nginx/html/landpage:ro
+      - /var/www/allcance-site/lgpd:/usr/share/nginx/html/lgpd:ro
+      - /var/www/allcance-site/nr1:/usr/share/nginx/html/nr1:ro
+      - /var/www/allcance-site/persuasao:/usr/share/nginx/html/persuasao:ro
+      - /var/www/allcance-site/psi-nr1:/usr/share/nginx/html/psi-nr1:ro
+      - /var/www/allcance-site/recrutamento:/usr/share/nginx/html/recrutamento:ro
+      - /var/www/allcance-site/termos-de-uso:/usr/share/nginx/html/termos-de-uso:ro
+    networks:
+      - dokploy-network
+    labels:
+      - traefik.enable=true
+      - traefik.http.routers.allcance-site.rule=Host(`allcance.co`) || Host(`www.allcance.co`)
+      - traefik.http.routers.allcance-site.entrypoints=websecure
+      - traefik.http.routers.allcance-site.tls.certresolver=letsencrypt
+      - traefik.http.routers.allcance-site-http.rule=Host(`allcance.co`) || Host(`www.allcance.co`)
+      - traefik.http.routers.allcance-site-http.entrypoints=web
+      - traefik.http.routers.allcance-site-http.middlewares=redirect-to-https
+      - traefik.http.middlewares.redirect-to-https.redirectscheme.scheme=https
+      - traefik.http.services.allcance-site.loadbalancer.server.port=80
+
+networks:
+  dokploy-network:
+    external: true
