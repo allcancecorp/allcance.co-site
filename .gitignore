@@ -6,3 +6,11 @@ site-old/
 .DS_Store
 *.local
 .claude/settings.local.json
+
+# Notas de infraestrutura do VPS. Contem senhas de producao e credenciais
+# do n8n em texto claro — NUNCA versionar. Se precisar compartilhar algo
+# daqui, extraia so o trecho necessario, sem segredo.
+VPS/
+
+# Documentacao de trabalho local, nao faz parte do build.
+docs/
